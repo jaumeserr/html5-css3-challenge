@@ -1,37 +1,45 @@
 * {
     font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: white;
+    background: #f8f8f8;
 }
 
 header {
     display: flex;
-    padding: 20px;
+    padding: 2rem;
     justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+header img {
+    height: 2.2rem;
+    width: auto;
 }
 
 input[type="text"] {
     background-color: #e2e8f0;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     color: #718096;
-    font-size: 14px;
+    font-size: 0.95rem;
     font-weight: 300;
-    padding: 0 20px;
-    height: 48px;
+    padding: 0 1.25rem 0 2.8rem;
+    height: 2.6rem;
     width: 20%;
-}
-
-nav {
-    display: flex;
-    align-items: center;
+    background-image: url('../img/lupa.svg');
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    background-size: 1rem;
 }
 
 nav a {
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 0.6rem;
     color: #718096;
     text-decoration: none;
 }

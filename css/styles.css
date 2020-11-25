@@ -106,3 +106,44 @@ button {
     border: 0.2rem solid #667eea;
     outline: none;
 }
+
+footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+footer > div a {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0 0.6rem 0.6rem;
+    text-decoration: none;
+    color: #718096;
+}
+
+footer > div a:hover {
+    color: #667eea;
+}
+
+footer div p:first-child {
+    font-weight: 600;
+    padding-bottom: 0.6rem;
+}
+
+footer div a:last-child {
+    padding-bottom: 0rem;
+} 
+
+footer div:nth-last-child(1) a {
+    display: flex;
+    flex-direction: row;
+}
+
+footer div:nth-last-child(1) img {
+    width: 1rem;
+    height: 1rem;
+    padding-top: 0.1rem;
+    padding-right: 0.3rem;
+}

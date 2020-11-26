@@ -180,6 +180,7 @@ aside div {
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.15);
     width: 100%;
     display: inline-block;
+    margin-bottom: 2rem;
 }
 
 aside div p {

@@ -132,6 +132,14 @@ footer div p:first-child {
     padding-bottom: 0.6rem;
 }
 
+footer :first-child p:nth-of-type(2) {
+    padding: 0.5rem 0 1rem 0;
+}
+
+footer :first-child p:nth-of-type(3) {
+    font-weight: 600;
+}
+
 footer div a:last-child {
     padding-bottom: 0rem;
 } 

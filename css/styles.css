@@ -1,41 +1,296 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --lightgray: #f8f8f8;
+    --darkgray: #718096;
+    --blue: #667eea;  
+}
+
 * {
     font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background: white;
-}
-
-header {
+.wrapper {
+    max-width: 62.5rem;
+    margin: 0 auto;
     display: flex;
-    padding: 20px;
     justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.box {
+    background: var(--white);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.15);
+    margin-bottom: 2rem; 
+    color: var(--darkgray);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.box p {
+    text-align: left;
+}
+
+button {
+    border-radius: 1.5rem;
+    padding: 0.7rem 2.2rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: var(--blue);
+    border: 0.2rem solid var(--blue);
+    color: var(--white);
+    outline: none;
+}
+
+.primary:hover {
+    background-color: var(--darkgray);
+    border: 0.2rem solid var(--darkgray);
+}
+
+.secondary {
+    margin-left: 0.7rem;
+    border: 0.2rem solid var(--darkgray);
+    color: var(--darkgray);
+    background-color: var(--lightgray);
+}
+
+.secondary:hover {
+    border: 0.2rem solid var(--blue);
+    outline: none;
+}
+
+h1 {
+    color: var(--blue);
 }
 
 input[type="text"] {
-    background-color: #e2e8f0;
-    border: none;
-    border-radius: 4px;
-    color: #718096;
-    font-size: 14px;
+    background-color: var(--lightgray);
+    border: 0.1rem solid var(--blue);
+    border-radius: 0.25rem;
+    color: var(--darkgray);
+    font-size: 0.95rem;
     font-weight: 300;
-    padding: 0 20px;
-    height: 48px;
-    width: 20%;
+    padding: 0.5rem;
+    height: 2.6rem;
+    width: 100%;
 }
 
-nav {
-    display: flex;
-    align-items: center;
+/****** HEADER *****/
+header {
+    background: var(--white);
+}
+
+header input {
+    background-image: url('../img/lupa.svg');
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    padding: 0 1.25rem 0 2.8rem !important;
+    width: 30% !important;
 }
 
 nav a {
     font-weight: bold;
-    padding: 0 10px;
-    color: #718096;
+    padding: 0 0.6rem;
+    color: var(--darkgray);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #667eea;
+    color: var(--blue);
+}
+
+/****** INTRO *****/
+
+.intro {
+    padding: 2rem 2rem 3.5rem 2rem;
+    background: var(--white);
+}
+
+.intro img {
+    height: 19rem;
+    border-radius: 3rem;
+    border: 0.2rem solid var(--darkgray);
+}
+
+.intro h2 {
+    font-size: 2.3rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+.intro h2 span {
+    color: var(--blue);
+}
+
+.intro h3 {
+    color: var(--darkgray);
+    padding: 1.8rem 0 1.9rem;
+}
+
+.imgprofile {
+    width: 20rem;
+    height: 20rem;
+    background-image: url('../img/foto_jaume.png');
+    background-size: cover;
+    border-radius: 2rem;
+    border: 2px solid var(--darkgray);
+}
+
+
+/******** MAIN ********/
+main {
+    background: var(--lightgray);
+}
+
+.align-top {
+    align-items: flex-start;
+}
+
+section h3 {
+    border-left: 0.3rem solid var(--darkgray);
+    padding: 0.2rem 0 0.2rem 1.4rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+article {
+    border-radius: 0.5rem;
+    background: var(--white);
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+article .img {
+    border-radius: 0.3rem;
+    background-size: cover;
+    height: 12.5rem;
+    min-width: 15rem;
+    margin-right: 2rem;
+}
+
+.photo01 {
+    background-image: url('https://picsum.photos/300/300');
+}
+
+.photo02 {
+    background-image: url('https://picsum.photos/300/301');
+}
+
+.photo03 {
+    background-image: url('https://picsum.photos/300/302');
+}
+
+.photo04 {
+    background-image: url('https://picsum.photos/300/303');
+}
+
+p.tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: var(--darkgray);
+    display: inline-block;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.7rem;
+    color: var(--white);
+}
+
+article div h4 {
+    font-size: 1.2rem;
+    margin: 1.3rem 0 1rem 0;
+    color: var(--black);
+}
+
+article div p:last-child {
+    font-size: 0.8rem;
+    color: var(--darkgray);
+    line-height: 1.7;
+}
+
+aside {
+    color: var(--black);
+    width: 12.5rem;
+    margin-left: 3rem;
+}
+
+aside div p.tag {
+    margin: 0.2rem 0;
+}
+
+aside h3 {
+    padding: 0.2rem 0 0.2rem 1.4rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+aside div:nth-of-type(2) img{
+    width: 3rem;
+    height: auto;
+    padding: 0rem 0.3rem;
+    margin-top: 0.7rem;
+}
+
+aside .box input {
+    margin: 1rem 0;
+}
+
+footer {
+    background: var(--white);
+    color: var(--black);
+}
+
+footer > div a {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0 0.6rem 0.6rem;
+    text-decoration: none;
+    color: var(--darkgray);
+}
+
+footer > div a:hover {
+    color: var(--blue);
+}
+
+footer div p:first-child {
+    font-weight: 600;
+    padding-bottom: 0.6rem;
+}
+
+footer :first-child p:nth-of-type(2) {
+    padding: 0.5rem 0 1rem 0;
+}
+
+footer :first-child p:nth-of-type(3) {
+    font-weight: 600;
+}
+
+footer div a:last-child {
+    padding-bottom: 0rem;
+} 
+
+footer div:nth-last-child(1) a {
+    display: flex;
+    flex-direction: row;
+}
+
+footer div:nth-last-child(1) img {
+    width: 1.3rem;
+    height: auto;
+    padding-top: 0.1rem;
+    padding-right: 0.3rem;
 }

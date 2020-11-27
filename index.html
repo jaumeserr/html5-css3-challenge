@@ -3,32 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Website Home</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="https://dummyimage.com/150x35/000/fff" />
-            <input type="text" placeholder="Discover news, articles" />
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">Contact</a>
-            </nav>
+            <div class="wrapper">
+                <h1>My homepage</h1>
+                <input type="text" placeholder="Discover news, articles" />
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About Me</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
         </header>
+        <div class="intro">
+            <div class="wrapper">
+                <div>
+                    <h2>Hi, I'm <span>Jaume Serradell</span>.</h2>
+                    <h2>Senior Email Developer</h2>
+                    <h3>Specialized in Frontend Development</h3>
+                    <div class="button-module">
+                        <button class="primary">Contact Me</button>
+                        <button class="secondary">About Me</button>
+                    </div>
+                </div>
+                <div class="imgprofile"></div>
+            </div>  
+        </div>
         <main>
-            <section>
-
-            </section>
-            <aside>
-
-            </aside>
+            <div class="wrapper align-top">
+                <div>
+                    <section>
+                        <h3>Recently Published</h3>
+                        <article>
+                            <div class="img photo01"></div>
+                            <div>
+                                <p class="tag">Agency</p>
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi turpis, consequat nec ante in, viverra iaculis leo</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img photo02"></div>
+                            <div>
+                                <p class="tag">Lorem</p>
+                                <h4>Quisque vel gravida mauris.</h4>
+                                <p>Aenean egestas orci in sapien viverra, vel tincidunt nunc malesuada. Morbi commodo convallis diam ut vulputate.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img photo03"></div>
+                            <div>
+                                <p class="tag">ipsum</p>
+                                <h4>Sed lacinia elementum blandit.</h4>
+                                <p>Fusce ac commodo enim. Ut at tortor nulla. Vestibulum eu mauris scelerisque, pretium ex in, tempor ligula.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img photo04"></div>
+                            <div>
+                                <p class="tag">dolor</p>
+                                <h4>Nulla a interdum sem.</h4>
+                                <p>Proin eget arcu vel dolor porttitor bibendum vel sit amet elit. Pellentesque ornare venenatis nibh, ut gravida nisl facilisis eget.</p>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <div>
+                    <aside>
+                        <h3>Tags</h3>
+                        <div class="box">
+                            <p class="tag">#agency</p>
+                            <p class="tag">#Lorem</p>
+                            <p class="tag">#ipsum</p>
+                            <p class="tag">#dolor</p>
+                            <p class="tag">#sit</p>
+                            <p class="tag">#amet</p>
+                            <p class="tag">#consectetur</p>
+                            <p class="tag">#adipiscing</p>
+                            <p class="tag">#elit</p>
+                        </div>
+                        <h3>Let's Talk</h3>
+                        <div class="box">
+                            <p>Want to find out how I can solve problems specific to your business? Let's talk.</p>
+                            <div>
+                                <a href="#"><img src="./img/whatsapp_logo.png"/></a>
+                                <a href="#"><img src="./img/instagram_logo.png"/></a>
+                                <a href="#"><img src="./img/twitter_logo.png"/></a>
+                            </div>
+                        </div>
+                        <h3>Newsletter</h3>
+                        <div class="box">
+                            <p>Make sure to subscribe to our newsletter and be the first to know the news.
+                            </p>
+                            <input type="text" placeholder="Email Address" />
+                            <button class="primary">Subscribe</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </main>
         <footer>
-
+            <div class="wrapper">
+                <div>
+                    <p>Jaume Serradell</p>
+                    <p>© 2020, All Rights Reserved.</p>
+                    <p>Powered by Jaume</p>
+                </div>
+                <div>
+                    <p>Quick Links</p>
+                    <a href="#">Advertise with us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div>
+                    <p>Legal Stuff</p>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Terms Of Use</a>
+                </div>
+                <div>
+                    <p>Social Media</p>
+                    <a href="#"><img src="./img/whatsapp_logo.png">Whatsapp</a>
+                    <a href="#"><img src="./img/instagram_logo.png"/>Instagram</a>
+                    <a href="#"><img src="./img/twitter_logo.png"/>Twitter</a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

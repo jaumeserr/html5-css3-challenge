@@ -13,8 +13,8 @@
     box-sizing: border-box;
 }
 
-body {
-
+.red {
+    background-color: red;
 }
 
 .wrapper {
@@ -26,13 +26,12 @@ body {
     padding: 2rem;
 }
 
-header {
-    background: var(--white);
+h1 {
+    color: var(--blue);
 }
 
-header img {
-    height: 2.2rem;
-    width: auto;
+header {
+    background: var(--white);
 }
 
 input[type="text"] {
@@ -118,6 +117,15 @@ button {
 .secondary:hover {
     border: 0.2rem solid var(--blue);
     outline: none;
+}
+
+.imgprofile {
+    width: 20rem;
+    height: 20rem;
+    background-image: url('../img/foto_jaume.png');
+    background-size: cover;
+    border-radius: 2rem;
+    border: 2px solid var(--darkgray);
 }
 
 main {

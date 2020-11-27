@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Website Home</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;600&display=swap" rel="stylesheet">
@@ -16,71 +16,65 @@
                 <h1>My homepage</h1>
                 <input type="text" placeholder="Discover news, articles" />
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">About Me</a>
+                    <a href="./index.html">Home</a>
                     <a href="#">Contact</a>
                 </nav>
             </div>
         </header>
-        <main>
+        <main class="form">
             <div class="wrapper align-top">
-                <div class="grid-container">
-                    <div>
-                        <section>
-                            <h3>Recently Published</h3>
-                            <article>
-                                <div class="img"></div>
+                <div>
+                    <section>
+                        <h3>Let's Connect</h3>
+                        <p>Theme comes with a pre-made contact form component. You can integrate this form with serverless services such as Formspree, Getform, FormKeep and others to receive form submissions via email.</p>
+                        <form class="box">
+                            <div class="grid-form">
                                 <div>
-                                    <p class="tag">Advertising</p>
-                                    <h4>Markdown Language Sample Blog</h4>
-                                    <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Type Name...">
                                 </div>
-                            </article>
-                            <article>
-                                <div class="img"></div>
                                 <div>
-                                    <p class="tag">Advertising</p>
-                                    <h4>Markdown Language Sample Blog</h4>
-                                    <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                                    <label>Company Name</label>
+                                    <input type="text" placeholder="Type Company name...">
                                 </div>
-                            </article>
-                            <article>
-                                <div class="img"></div>
                                 <div>
-                                    <p class="tag">Advertising</p>
-                                    <h4>Markdown Language Sample Blog</h4>
-                                    <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Type email...">
                                 </div>
-                            </article>
-                            <article>
-                                <div class="img"></div>
                                 <div>
-                                    <p class="tag">Advertising</p>
-                                    <h4>Markdown Language Sample Blog</h4>
-                                    <p>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                                    <label>Phone Number</label>
+                                    <input type="text" placeholder="Type a phone number...">
                                 </div>
-                            </article>
-                        </section>
-                    </div>
-                    <div></div>
-                    <div>
-                        <aside>
-                            <h3>Tags</h3>
-                            <div>
-                                <p class="tag">#agency</p><br>
-                                <p class="tag">#business</p><br>
-                                <p class="tag">#business</p><br>
-                                <p class="tag">#business</p>
+                                <div class="fullWidth">
+                                    <label>Subject</label>
+                                    <input type="text" placeholder="Type a subject...">
+                                </div>
+                                <div class="fullWidth">
+                                    <label>Your Message</label>
+                                    <textarea>Enter your message...</textarea>
+                                </div>
+                                <div>
+                                    <button class="primary">Submit</button>
+                                </div>
                             </div>
-                            <h3>Tags</h3>
-                            <div>
-                                <p class="tag">#agency</p><br>
-                                <p class="tag">#business</p><br>
-                                <p class="tag">#business</p><br>
-                                <p class="tag">#business</p>
+                        </form>
+                    </section>
+                </div>
+                <div>
+                    <aside>
+                        <h3>Our Commitment</h3>
+                        <div class="box">
+                            <p>We take our commitment to our users seriously. If you need our help with your project, have questions about how to use the site or are experiencing any technical difficulties, please do not hesitate to contact us.</p>
+                        </div>
+                        <h3>Advertise With Us</h3>
+                        <div class="box">
+                            <p>Interested in working together?</p>
+                            <p>Suspendisse potenti. Mauris mollis diam tempus ut.</p>
+                            <div class="contact">
+                                <p>+1 (888) 888-8888<br>email@example.com<br>Barcelona, BCN</p>
                             </div>
-                        </aside>
-                    </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </main>
@@ -105,9 +99,9 @@
                 </div>
                 <div>
                     <p>Social Media</p>
-                    <a href="#"><img src="./img/github_logo.png"/>github</a>
-                    <a href="#"><img src="./img/twitter_logo.png"/>twitter</a>
-                    <a href="#"><img src="./img/instragram_logo.png"/>instagram</a>
+                    <a href="#">Whatsapp</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
                 </div>
             </div>
         </footer>

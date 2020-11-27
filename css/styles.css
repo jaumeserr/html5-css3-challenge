@@ -3,7 +3,8 @@
     --white: #ffffff;
     --lightgray: #f8f8f8;
     --darkgray: #718096;
-    --blue: #667eea;  
+    --blue: #667eea;
+    --input: #e8e8e8; 
 }
 
 * {
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
 }
 
 .box {
@@ -53,16 +54,14 @@ button {
     outline: none;
 }
 
+.primary a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 .primary:hover {
     background-color: var(--darkgray);
     border: 0.2rem solid var(--darkgray);
-}
-
-.secondary {
-    margin-left: 0.7rem;
-    border: 0.2rem solid var(--darkgray);
-    color: var(--darkgray);
-    background-color: var(--lightgray);
 }
 
 .secondary:hover {
@@ -74,9 +73,8 @@ h1 {
     color: var(--blue);
 }
 
-input[type="text"] {
-    background-color: var(--lightgray);
-    border: 0.1rem solid var(--blue);
+input[type="text"], [type="email"] {
+    background-color: var(--input);
     border-radius: 0.25rem;
     color: var(--darkgray);
     font-size: 0.95rem;
@@ -84,6 +82,19 @@ input[type="text"] {
     padding: 0.5rem;
     height: 2.6rem;
     width: 100%;
+    border: none;
+}
+
+textarea {
+    background-color: var(--input);
+    border-radius: 0.25rem;
+    color: var(--darkgray);
+    font-size: 0.95rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    height: 6rem;
+    width: 100%;
+    border: none;
 }
 
 /****** HEADER *****/
@@ -114,7 +125,6 @@ nav a:hover {
 /****** INTRO *****/
 
 .intro {
-    padding: 2rem 2rem 3.5rem 2rem;
     background: var(--white);
 }
 
@@ -156,6 +166,12 @@ main {
 
 .align-top {
     align-items: flex-start;
+}
+
+section {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--darkgray);
 }
 
 section h3 {
@@ -293,4 +309,29 @@ footer div:nth-last-child(1) img {
     height: auto;
     padding-top: 0.1rem;
     padding-right: 0.3rem;
+}
+
+.contact {
+    padding-top: 1rem;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    text-align: left;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.fullWidth {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.form .box {
+    margin-top: 2rem;
+}
+
+.form section p {
+    font-size: 1.2rem;
 }
